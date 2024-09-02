@@ -9,7 +9,7 @@ function Submissions() {
     useEffect(() => {
         const fetchSubmissions = async () => {
             try {
-                const response = await axios.get('/submissions');
+                const response = await axios.get('https://gdscbackend.onrender.com/submissions');
                 if (Array.isArray(response.data)) {
                     setSubmissions(response.data);
                 } else {
